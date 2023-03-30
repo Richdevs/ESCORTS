@@ -10,14 +10,14 @@ const sendEmail = asyncHandler(async (data, req, res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user:"richardkiiluh@gmail.com", // generated ethereal user
-            pass:"uovpdkibnfqjlynb", // generated ethereal password
+            user:"", // generated ethereal user
+            pass:"", // generated ethereal password
         },
     });
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"WEB MASTER" <richardkiiluh@gmail.com>', // sender address
+        from: '"WEB MASTER"', // sender address
         to: data.to, // list of receivers
         subject: data.subject,
         text: data.text, // plain text body
