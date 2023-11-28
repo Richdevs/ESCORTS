@@ -8,6 +8,7 @@ const validateMongoDbId = require("../utils/validateMongoDbId");
 /**
  * TRUCKS FUNCTIONS
  */
+
 // Add a new truck
 
 const addTruck = asyncHandler(async (req, res) => {

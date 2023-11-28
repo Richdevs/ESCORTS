@@ -36,4 +36,3 @@ const isAdmin = asyncHandler(async (req, res, next) => {
 
 module.exports={authMiddleware,isAdmin};
 
-//1:20:16 developers corner rest api
