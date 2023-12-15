@@ -9,7 +9,9 @@ const validateMongoDbId = require("../utils/validateMongoDbId");
 const crypto=require("crypto");
 const jwt = require("jsonwebtoken");
 const secret=process.env.JWT_SECRET;
-
+/**
+ * USER FUNCTIONS
+ */
 //Add a new User
 const createUser = asyncHandler(async (req, res) => {
     const email = req.body.email;
